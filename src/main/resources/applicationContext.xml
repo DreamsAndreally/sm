@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!--配置扫描器-->
+    <context:component-scan base-package="cn.com.*">
+
+    </context:component-scan>
+    <bean id="dog" class="cn.com.domain.Dog">
+
+    </bean>
+
+    <!--    <bean id="dog" class="cn.com.domain.Dog">
+
+        </bean>
+        <bean id="admin" class="cn.com.domain.Admin"></bean>
+        <bean id="db" class="cn.com.domain.DB">
+            &lt;!&ndash;注入Sring值&ndash;&gt;
+            <property name="driver" value="123" />
+            <property name="port" value="12" />
+            &lt;!&ndash;注入实体类&ndash;&gt;
+            <property name="admin" ref="admin" />
+            <property name="list">
+           <list>
+               <value>12</value>
+               <value>22</value>
+           </list>
+            </property>
+        </bean>-->
+
+</beans>
